@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.deleteAll{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteAll button{
+    height: 40px;
+    padding: 4px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 75%;
+    cursor: pointer;
+    background: red;
+    color: white;
+    /* border: none; */
+    border-radius: 6px;
+}
+.deleteAll button:hover{
+    color: black;
+    transition: all;
+    transition-duration: .3s;
+}
+@media only screen  and (max-width:640px) {
+    .deleteAll{
+        width: 100%;
+    }
+}

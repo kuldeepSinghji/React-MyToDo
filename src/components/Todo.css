@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.todo{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 3%;
+}
+.heading{
+    /* border: 1px solid black; */
+    padding: 4px 0px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+.inputBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid black; */
+}
+.inputBox input{
+    height: 40px;
+    width:90% ;
+    font-size: 18px;
+    padding: 4px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid greenyellow;
+}
+.inputBox  .addItemBox button{
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 27px;
+    font-weight: 900;
+    cursor: pointer;
+    background: #ff009d;
+    border: none;
+    border-radius: 50%;
+}
+.inputBox  .addItemBox button:hover{
+    color:black;
+    transition: all;
+    transition-duration: .3s;
+}
+.showItemBox{
+    /* border: 1px solid gold; */
+    width: 40%;    
+}
+hr{
+    width: 50%;
+    margin: 25px 0px;
+    display: inline-block;
+    /* color: black; */
+    /* background: black; */
+}
+@media screen and (max-width:640px) {
+    .todo{
+        width: 100%;
+    }
+    .inputBox{
+        width: 80%;
+    }
+    hr{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .showItemBox{
+        width: 80%;
+    }    
+}
